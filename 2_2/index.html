@@ -7,7 +7,31 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
   $(function(){
     // ここに処理を記述
+    const pullDownButton = document.getElementById("button1")
+    pullDownButton.addEventListener('mouseover', function(){
+      // console.log("OK")
+      pullDownButton.setAttribute("style", "background-color: red;")
+    })
+    pullDownButton.addEventListener('mouseout', function(){
+      // console.log("mouseout OK")
+      pullDownButton.removeAttribute("style")
+    })
     
+    const pullDownButton2 = document.getElementById("button2")
+    pullDownButton2.addEventListener('mouseover', function(){
+      pullDownButton2.setAttribute("style", "background-color: red;")
+    })
+    pullDownButton2.addEventListener('mouseout', function(){
+      pullDownButton2.removeAttribute("style")
+    })
+
+    const pullDownButton3 = document.getElementById("button3")
+    pullDownButton3.addEventListener('mouseover', function(){
+      pullDownButton3.setAttribute("style", "background-color: red;")
+    })
+    pullDownButton3.addEventListener('mouseout', function(){
+      pullDownButton3.removeAttribute("style")
+    })
   });
   </script>
 </head>
