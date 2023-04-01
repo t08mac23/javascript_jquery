@@ -46,6 +46,10 @@ body {
   cursor: pointer;
 }
 
+#button.active {
+  left: calc(100% - 100px);
+}
+
 #button p {
   line-height: 180px;
   font-size: 30px;
