@@ -7,7 +7,26 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
   $(function(){
     // ここに処理を記述
-    
+    $('#button1').on('mouseenter', function() {
+      $('#button1').css('background','red');
+    });
+    $('#button1').on('mouseout', function() {
+      $('#button1').css('background','#fdd');
+    });
+
+    $('#button2').on('mouseenter', function() {
+      $('#button2').css('background','red');
+    });
+    $('#button2').on('mouseout', function() {
+      $('#button2').css('background','#fdd');
+    });
+
+    $('#button3').on('mouseenter', function() {
+      $('#button3').css('background','red');
+    });
+    $('#button3').on('mouseout', function() {
+      $('#button3').css('background','#fdd');
+    });
   });
   </script>
 </head>
