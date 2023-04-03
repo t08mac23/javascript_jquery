@@ -7,6 +7,17 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
   $(function(){
     // ここに処理を記述
+    const button = document.getElementById('button')
+    button.addEventListener('click', () => {
+      // console.log("ok")
+      if (document.getElementById("value").value == 1){
+        document.getElementById('box').style.background='red';
+      }else if (document.getElementById("value").value == 2){
+        document.getElementById('box').style.background='yellowGreen';
+      }else if (document.getElementById("value").value == 3){
+        document.getElementById('box').style.background='blue';
+      };
+    });
   });
   </script>
 </head>
