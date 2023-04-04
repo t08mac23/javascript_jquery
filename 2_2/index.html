@@ -7,22 +7,20 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
   $(function(){
     // ここに処理を記述
+    
     $('#button1').on('click', function() {
+      $('.button').removeClass('active');
       $(this).toggleClass('active');
-      $('#button2').removeClass('active');
-      $('#button3').removeClass('active');
     });
 
     $('#button2').on('click', function() {
+      $('.button').removeClass('active');
       $(this).toggleClass('active');
-      $('#button1').removeClass('active');
-      $('#button3').removeClass('active');
     });
 
     $('#button3').on('click', function() {
+      $('.button').removeClass('active');
       $(this).toggleClass('active');
-      $('#button1').removeClass('active');
-      $('#button2').removeClass('active');
     });
   });
   </script>
