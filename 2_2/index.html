@@ -9,14 +9,20 @@
     // ここに処理を記述
     $('#button1').on('click', function() {
       $(this).toggleClass('active');
+      $('#button2').removeClass('active');
+      $('#button3').removeClass('active');
     });
 
     $('#button2').on('click', function() {
       $(this).toggleClass('active');
+      $('#button1').removeClass('active');
+      $('#button3').removeClass('active');
     });
 
     $('#button3').on('click', function() {
       $(this).toggleClass('active');
+      $('#button1').removeClass('active');
+      $('#button2').removeClass('active');
     });
   });
   </script>
